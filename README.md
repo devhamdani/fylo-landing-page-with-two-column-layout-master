@@ -23,7 +23,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Visit Solution](https://your-solution-url.com)
-- Live Site URL: [Preview](https://your-live-site-url.com)
+- Live Site URL: [Preview](https://fedev-hammad.github.io/fylo-landing-page-with-two-column-layout-master/)
 
 ## My process
 
