@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+
+  <body>
+    <!-- __________ Header Section __________ -->
+    <header class="px-8 sm:px-16 lg:px-24">
+      <!-- _______________ Page Navigation ___________-->
+      <nav class="w-full py-12 mb-16 flex gap-5 items-center justify-between">
+        <!-- _________ Logo Section ______________ -->
+        <a href="#"
+          ><img
+            class="w-24 sm:w-32"
+            src="./images/logo.svg"
+            alt="Fylo logo.svg"
+        /></a>
+
+        <!-- __________ Links Section __________ -->
+        <ul class="flex gap-6 sm:gap-10 md:gap-14">
+          <li class="nav-link"><a href="#">Features</a></li>
+          <li class="nav-link"><a href="#">Team</a></li>
+          <li class="nav-link"><a href="#">Sign in</a></li>
+        </ul>
+      </nav>
+
+      <!-- ____________ Hero Section _____________ -->
+      <section
+        class="flex flex-col sm:flex-row items-center justify-between gap-10">
+        <!-- ____________ Hero Text Section _____________ -->
+
+        <div class="grid gap-8 sm:gap-6 order-2 sm:order-1">
+          <h1 class="text-3xl text-very-dark-blue text-center sm:text-left"
+            >All your files in one secure location, accessible anywhere.</h1
+          >
+          <p class="text-center sm:text-left">
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
+
+          <form class="flex flex-col lg:flex-row gap-2 w-full lg:w-4/5">
+            <input
+              type="email"
+              placeholder="Enter your email ..."
+              class="box-border w-full lg:w-[70%] px-3 py-3 rounded outline-none border border-light-gray focus:border-bright-blue transition-colors" />
+
+            <input
+              type="submit"
+              value="Get Started"
+              class="w-full lg:w-[30%] flex p-3 rounded bg-bright-blue border border-bright-blue text-white font-bold cursor-pointer hover:border-very-dark-blue active:bg-bright-blue/70 transition-colors" />
+          </form>
+        </div>
+
+        <!-- ____________ Hero Image Section _____________ -->
+        <div class="order-1 sm:order-2">
+          <img src="./images/illustration-1.svg" alt="" />
+        </div>
+      </section>
+    </header>
+
+    <!-- __________ Page Body __________ -->
+    <main>
+      <!-- ________ Body Section #1 ___________ -->
+      <section
+        class="bg-light-grayish-blue flex flex-col md:flex-row items-center justify-center md:justify-between gap-14 mt-52 pt-12 pb-16 px-8 sm:px-16 lg:px-24 relative">
+        <img
+          class="absolute -top-6 sm:-top-8 md:-top-12 lg:-top-20 left-0"
+          src="./images/bg-curve-desktop.svg"
+          alt="bg-curve-desktop.svg" />
+
+        <!-- ____________ Body Section #1 Text _____________ -->
+
+        <div class="grid gap-10 order-2 md:order-1">
+          <h1 class="text-3xl text-center md:text-left"
+            >Stay productive, wherever you are</h1
+          >
+
+          <div class="grid gap-2 text-center md:text-left">
+            <p class="text-center md:text-left">
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p class="text-center md:text-left">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+          </div>
+
+          <div
+            class="w-max flex items-end gap-2 text-moderate-cyan border-b pb-1 hover:border-b-bright-blue">
+            <a href="#">See how Flyo works</a>
+
+            <img class="aspect-square" src="./images/icon-arrow.svg" alt="" />
+          </div>
+
+          <!-- ____________ Testimonial Card ___________ -->
+          <div
+            class="sm:w-96 bg-white shadow-lg rounded-xl p-7 mt-6 flex flex-col gap-6 items-start">
+            <img src="./images/icon-quotes.svg" alt="quotation icon" />
+
+            <p class="text-sm">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
+
+            <div class="flex items-center gap-4">
+              <img
+                class="rounded-full w-8"
+                src="./images/avatar-testimonial.jpg"
+                alt="user avatar" />
+
+              <div>
+                <h3 class="text-xs">Kyle Burton</h3>
+                <p class="text-xs text-light-gray">Founder & CEO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ____________ Body Section #1 Image  _____________ -->
+        <div class="flex justify-end order-1 md:order-2">
+          <img class="" src="./images/illustration-2.svg" alt="" />
+        </div>
+      </section>
+
+      <!-- __________ Body Section #2 __________ -->
+      <section
+        class="bg-desaturated-blue py-16 px-8 sm:px-16 md:px-24 flex gap-10 flex-col sm:flex-row grid items-center justify-between min-h-80">
+        <!-- ___________ Body Section #2 Text ___________-->
+        <div class="grid gap-6">
+          <h3 class="text-2xl text-white text-center sm:text-left">
+            Get early access today
+          </h3>
+          <p class="text-white text-sm text-center sm:text-left"
+            >It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.</p
+          >
+        </div>
+
+        <!--  ______________ Body Section #2 Form _____________ -->
+        <form class="w-full flex items-center justify-center sm:justify-end">
+          <div class="w-full flex flex-col items-start justify-end gap-3">
+            <input
+              type="email"
+              placeholder="Enter your email ..."
+              class="w-full px-3 py-3 rounded outline-none border-2 border-light-grayish-blue shadow-md" />
+
+            <input
+              type="submit"
+              value="Get Started"
+              class="w-full flex justify-center py-3 rounded bg-bright-blue text-white font-bold cursor-pointer shadow-md hover:bg-bright-blue/70 active:bg-very-dark-blue transition-colors" />
+          </div>
+        </form>
+        <!-- __________ Body Section #2 Form _______ -->
+      </section>
+    </main>
+
+    <!-- __________ Footer Section __________ -->
+    <footer
+      class="py-16 px-8 sm:px-16 lg:px-24 bg-very-dark-blue flex flex-col justify-center gap-20">
+      <!-- ______________ Logo Section ______________ -->
+      <a href="#"
+        ><img class="w-32" src="./images/logo-white.svg" alt="Fylo logo.svg"
+      /></a>
+
+      <!-- ______________ Links Section ______________ -->
+      <div
+        class="flex flex-col gap-12 sm:flex-row justify-between items-start text-white">
+        <!-- ____________ Contact Information ___________ -->
+        <ul class="grid gap-3">
+          <li class="flex gap-5 items-center">
+            <img
+              class="w-6 h-6"
+              src="./images/icon-phone.svg"
+              alt="phone svg icon" />
+            <span>+1-543-123-4567</span>
+          </li>
+
+          <li class="flex gap-5 items-center">
+            <img
+              class="w-6 h-6"
+              src="./images/icon-email.svg"
+              alt="email svg icon" />
+            <span>example@fylo.com</span>
+          </li>
+        </ul>
+
+        <!-- ____________ Links Section 1 ___________ -->
+        <ul class="grid gap-4">
+          <li class="nav-link"><a href="#">About Us</a></li>
+          <li class="nav-link"><a href="#">Jobs</a></li>
+          <li class="nav-link"><a href="#">Press</a></li>
+          <li class="nav-link"><a href="#">Blog</a></li>
+        </ul>
+
+        <!-- ____________ Links Section 2 ___________ -->
+        <ul class="grid gap-4">
+          <li class="nav-link"><a href="#">Contact Us</a></li>
+
+          <li class="nav-link"><a href="#">Terms</a></li>
+
+          <li class="nav-link"><a href="#">Privacy</a></li>
+        </ul>
+
+        <!-- ____________ Social Media Links ___________ -->
+        <ul class="grid gap-4 grid-cols-3 place-items-center">
+          <li>
+            <div class="footer-social-icon-box">
+              <a href="#">
+                <img
+                  class="w-4 block"
+                  src="./images/facebook.svg"
+                  alt="facebook icon" />
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <div class="footer-social-icon-box">
+              <a href="https://twitter.com/feDev_Hammad">
+                <img
+                  class="w-4 block"
+                  src="./images/twitter.svg"
+                  alt="twitter icon" />
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <div class="footer-social-icon-box">
+              <a href="#">
+                <img
+                  class="w-5 block"
+                  src="./images/instagram.svg"
+                  alt="instagram icon" />
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-raleway font-bold text-very-dark-blue
+    }
+
+    input {
+        @apply font-raleway text-sm
+    }
+
+    p {
+        @apply font-open-sans
+    }
+
+
+}
+
+@layer components {
+
+    .nav-link {
+        @apply transition-colors
+    }
+
+    .nav-link:hover {
+        @apply text-bright-blue
+    }
+
+    .footer-social-icon-box {
+        @apply w-10 h-10 aspect-square border-2 border-white rounded-full grid place-items-center transition-colors cursor-pointer
+    }
+
+    .footer-social-icon-box:hover {
+        @apply border-bright-blue bg-bright-blue
+    }
+}
